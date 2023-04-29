@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7D488;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #FFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  flex: 0 0 160px;
+  height: 48px;
+  padding: 12px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #FFA500;
+  color: #FFF;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF8C00;
+}
+
+.recipe-card {
+  margin-bottom: 30px;
+  background-color: #FFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.recipe-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  padding: 20px;
+  margin: 0;
+  background-color: #FFA500;
+  color: #FFF;
+}
+
+.recipe-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.recipe-details img {
+  width: 20%;
+  height: auto;
+  margin-right: 10px;
+  flex: 0 0 auto;
+}
+
+.recipe-details p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+  flex: 1;
+}
+
+.recipe-summary {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+
+.recipe-instructions {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.recipe-instructions h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 20px;
+}
+
+.recipe-instructions ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+  list-style: none;
+}
+
+.recipe-instructions li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+.no-results-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.no-results-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.no-results-text {
+  font-size: 20px;
+  text-align: center;
+  color: #888;
+}
+
+.ingredients-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.ingredients-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ingredients-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ingredients-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.recipe-card hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.recipe-summary-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.recipe-summary-restrictions-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.recipe-restrictions {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 10px;
+  background-color: #F2F2F2;
+  padding: 10px;
+}
+
+
+/* Restaurant styles */
+.restaurant-card {
+  margin-bottom: 30px;
+  background-color: #FFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.restaurant-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  padding: 20px;
+  margin: 0;
+  background-color: #FFA500;
+  color: #FFF;
+}
+
+.restaurant-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFA500;
+  padding: 20px;
+}
+
+.restaurant-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFF;
+  margin: 0;
+}
+
+.restaurant-image {
+  width: 30%;
+  height: auto;
+  margin-right: 20px;
+  flex: 0 0 auto;
+}
+
+.restaurant-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.restaurant-info {
+  flex: 1;
+}
+
+.restaurant-description,
+.restaurant-cuisine,
+.restaurant-address,
+.restaurant-phone,
+.restaurant-rating {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin: 5px 0;
+}
+
+.restaurant-rating {
+  font-weight: 600;
+}
+
+.restaurant-cuisine::before {
+  content: "Cuisine: ";
+  font-weight: 600;
+}
+
+.restaurant-address::before {
+  content: "Address: ";
+  font-weight: 600;
+}
+
+.restaurant-phone::before {
+  content: "Phone: ";
+  font-weight: 600;
+}
+
+.no-results-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.no-results-text {
+  font-size: 20px;
+  text-align: center;
+  color: #888;
+}
+
+.restaurant-address {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+.restaurant-address a {
+  color: #555;
+  text-decoration: none;
+  border-bottom: 1px dotted #555;
+  cursor: pointer;
+}
+
+.restaurant-address a:hover {
+  border-bottom-style: solid;
+}
