@@ -95,7 +95,7 @@ function displayRestaurants(restaurants) {
         var noResultsNote = createElement("div");
         addStyleClass(noResultsNote, "no-results-note");
         var noResultsText = createElement("p");
-        noResultsText.textContent = "We could not find a matching recipe. Here are some suggested restaurants:";
+        noResultsText.textContent = "Looks like we couldn't find a recipe that matches your craving... but don't worry, we've got your back! Here are some mouth-watering restaurants to try instead";
         addStyleClass(noResultsText, "no-results-text");
         append(noResultsNote, noResultsText);
 
