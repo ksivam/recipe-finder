@@ -2,7 +2,7 @@ var recipes = [{
     id: 1,
     title: "Chicken Enchilada Casserole",
     calorie: 500,
-    restrictions: ["Vegetarian"],
+    restrictions: ["White Meat"],
     ingredients: [
         {"chicken": "2lb"},
         {"Enchilada sauce": "14oz jar"},
